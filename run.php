@@ -11,6 +11,7 @@ class CallbacksFilter {
 		$testValue = $this->callbacks[$name];
 	}
 
+
 	public function doCallback($name, $param1, $param2) {
 		$this->callbacks[$name]($param1, $param2);
 	}
