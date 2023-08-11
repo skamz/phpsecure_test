@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Phpsecure Vulnerabilities Scanner
-        uses: PhpSecureScanner/phpsecure_action@v0.1.5
+        uses: PhpSecureScanner/phpsecure_action@v0.1-debug
         env:
           PHPSECURE_AUTH_TOKEN: ${{ secrets.PHPSECURE_AUTH_TOKEN }}
           INPUT_PROJECT_NAME: "github test"
