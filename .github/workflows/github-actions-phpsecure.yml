@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Phpsecure Vulnerabilities Scanner
-        uses: PhpSecureScanner/phpsecure_action@v0.1.2
+        uses: PhpSecureScanner/phpsecure_action@v0.1.3
         env:
-          auth_token: ${{ secrets.PHPSECURE_AUTH_TOKEN }}
+          PHPSECURE_AUTH_TOKEN: ${{ secrets.PHPSECURE_AUTH_TOKEN }}
 
