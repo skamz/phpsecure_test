@@ -1,6 +1,9 @@
 name: GitHub Actions Phpsecure
 run-name: ${{ github.actor }} is testing Phpsecure Action 🚀
-on: [push]
+on:
+  push:
+    branches:
+      - master
 jobs:
   Phpsecure-Action:
     runs-on: ubuntu-latest
@@ -11,5 +14,4 @@ jobs:
         uses: PhpSecureScanner/phpsecure_action@v0.1.6
         env:
           PHPSECURE_AUTH_TOKEN: ${{ secrets.PHPSECURE_AUTH_TOKEN }}
-          PROJECT_NAME: "github test"
 
